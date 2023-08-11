@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    background-image: linear-gradient(to bottom, #393031 5%, white 49%, black 54%, red 99%, #393031 100%);
+    min-height: 100vh;
+}
+
+.leftContent, .rightContent {
+    flex-basis: 50%;
+}
+
+.leftContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 3rem;
+}
+
+.card {
+    width: 230px;
+    background-color: #9EDEF9;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0.5rem 0;
+}
+
+.rightContent {
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.rightContent img {
+    margin: 1.5rem;
+    height: 160px;
+}
+
+.rightContent h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.abilities {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.abilities .group {
+    background-color: #b74555;
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+.baseStat {
+    margin-top: 2rem;
+}
+
+.btnGroup {
+    display: flex;
+}
+
+.btnGroup button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #b74555;
+    border-radius: 8px;
+}
+
+.btnGroup button:active {
+  transform: none; 
+  transition: background-color 0.3s ease;
+}
+
+.btnGroup button:focus {
+  outline: none;
+   box-shadow: 0 0 5px #a33444;
+}
+
+
+
+ul {
+    list-style-type: none;
+}

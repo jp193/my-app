@@ -1,0 +1,78 @@
+/* .slideshowContainer {
+  width: 100%;
+  position: relative;
+  margin: 50px auto 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  background-image: "src": "/images/p3.gif";
+  width: 50%;
+  transition: opacity 0.5s;
+  vertical-align: middle;
+}
+
+.dotContainer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from { opacity: 0.8 }
+  to { opacity: 1 }
+}
+
+.fullScreenImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  object-fit: cover; 
+  animation: fadeOut 3s forwards;
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+} */
+
+.fullScreenContainer {
+  position: fixed;
+  top: 90px;           /* Starting just below the Navbar */
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);  /* Takes the height of the viewport minus the height of the Navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.fullScreenImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

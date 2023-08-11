@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Main from './Components/Main';
+import NavBar from './Components/NavBar';
+// import './Components/style.css'
+// import './Components/NavBar.module.css'
+// import './Components/Main.module.css'
+// import Pricing from './Components/Pricing'
+import Random from './Components/Random'
+import Memory from './Components/Memory'
+import Home from './Components/Home'
+import Pick from './Components/Pick'
+import { Route, Routes } from "react-router-dom"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/pokedex' element={<Main/>} />
+          <Route path='/pick' element={<Pick />} />
+          <Route path='/quick' element={<Random />} />
+          <Route path='/memory' element={<Memory />} />
+        </Routes>
+      </div>
+      
+    </>
   );
 }
 
